@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For my bff</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">For You 💝</div>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#story">Our Story</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#reasons">Why You?</a></li>
+    </ul>
+  </nav>
+
+  <header id="hero" class="hero-section">
+    <div class="hero-content">
+      <span class="tagline">A Website Built Just For You</span>
+      <h1>To the most beautiful person in the world</h1>
+      <p>Thank you for being with my side whatever my emotion is, I really appreciate it.</p>
+      <div class="hero-buttons">
+        <a href="#story" class="btn btn-primary">Explore Our Story</a>
+        <button class="btn btn-secondary" onclick="openSecretMsg()">Read Secret Note ✉️</button>
+      </div>
+    </div>
+  </header>
+
+  <section id="story" class="section timeline-section">
+    <div class="section-title">
+      <h2>Our Journey</h2>
+      <p>A few of my favorite milestones with you</p>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-item left">
+        <div class="timeline-content">
+          <span class="date">Day One</span>
+          <h3>The Day We Met</h3>
+          <p>I didn't know it back then, but meeting you was the start of the happiest chapter of my life.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item right">
+        <div class="timeline-content">
+          <span class="date">First Big Trip</span>
+          <h3>Our First Adventure</h3>
+          <p>Traveling together made me realize you're not just my boyfriend, you're my best travel partner for life.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item left">
+        <div class="timeline-content">
+          <span class="date">Right Now</span>
+          <h3>Still My Favorite</h3>
+          <p>Every single day with you keeps getting better. Here's to making thousands more memories.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="section gallery-section">
+    <div class="section-title">
+      <h2>Favorite Moments</h2>
+      <p>Captured memories with my favorite guy</p>
+    </div>
+
+    <div class="gallery-container">
+      <div class="gallery-card">
+        <img src="https://images.unsplash.com/photo-1518199266791-5375a83190b7?auto=format&fit=crop&w=600&q=80" alt="Moment 1">
+        <div class="card-caption">Unforgettable Dates</div>
+      </div>
+
+      <div class="gallery-card">
+        <img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=600&q=80" alt="Moment 2">
+        <div class="card-caption">Cozy Afternoons</div>
+      </div>
+
+      <div class="gallery-card">
+        <img src="https://images.unsplash.com/photo-1494774157365-9e04c6720e47?auto=format&fit=crop&w=600&q=80" alt="Moment 3">
+        <div class="card-caption">Endless Laughs</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="reasons" class="section reasons-section">
+    <div class="section-title">
+      <h2>Why You're The Best</h2>
+      <p>Just a few reasons why you're irreplaceable to me</p>
+    </div>
+
+    <div class="features-grid">
+      <div class="feature-box">
+        <div class="icon">😊</div>
+        <h3>Your Heart & Warmth</h3>
+        <p>You always know how to turn a bad day into a good one with just a hug or a smile.</p>
+      </div>
+
+      <div class="feature-box">
+        <div class="icon">🌟</div>
+        <h3>My Biggest Supporter</h3>
+        <p>Thank you for always believing in me, even when I forget to believe in myself.</p>
+      </div>
+
+      <div class="feature-box">
+        <div class="icon">🍕</div>
+        <h3>Best Foodie Partner</h3>
+        <p>Late night snacks, new restaurants, and sharing dessert will always be our thing.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Made with ❤️ specifically for you.</p>
+  </footer>
+
+  <div id="secretModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeSecretMsg()">&times;</span>
+      <h2>A Quick Note For You 💌</h2>
+      <p>If you're reading this, I just wanted to remind you how much you are loved and appreciated every single day. Thanks for being you!</p>
+    </div>
+  </div>
+
+  <script>
+    function openSecretMsg() {
+      document.getElementById("secretModal").style.display = "flex";
+    }
+    function closeSecretMsg() {
+      document.getElementById("secretModal").style.display = "none";
+    }
+    window.onclick = function(event) {
+      let modal = document.getElementById("secretModal");
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+
+</body>
+</html>
